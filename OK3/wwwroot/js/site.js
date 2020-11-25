@@ -19,3 +19,13 @@ var typed = new Typed('#navbartitle', {
     loop: true,
     backSpeed: 40,
   });
+
+$(document).ready(_ => {
+        var diff_ms = Date.now() - new Date(2005, 7, 5).getTime();
+        var age_dt = new Date(diff_ms); 
+
+        $('#sub').text(Math.abs(age_dt.getUTCFullYear() - 1970) + " year old developer and aspiring polygot; obsessed with Nordic countries.");
+
+        window.fitText( document.getElementById("title"), 2 );
+
+});

@@ -15,7 +15,6 @@ body {
   }
 
 section#top {
-    letter-spacing: 35px;
     height: calc(100vh);
     position: relative;
     top: -72px;
@@ -30,4 +29,12 @@ section#top {
 
 .title {
     font-weight: 400;
+    letter-spacing: 35px;
+    padding-left: 35px;
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: 400;
+    color: rgba(255,255,255,.5);
 }
