@@ -1,0 +1,33 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+    color: #ebebeb;
+    background-color: #0a0a0a;
+}
+
+.nav-selected {
+    color: #FFFFFF !important;
+}
+
+.navbar {
+    background: none !important;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+section#top {
+    letter-spacing: 35px;
+    height: calc(100vh);
+    position: relative;
+    top: -72px;
+    z-index: -1;
+}
+
+.vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    font-weight: 400;
+}
