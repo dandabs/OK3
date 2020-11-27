@@ -21,6 +21,24 @@ section#top {
     z-index: -1;
 }
 
+section#intro {
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+}
+
+#introimg {
+
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/2198.jpg");
+    filter: grayscale(100%);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
 .vertical {
     position: relative;
     top: 50%;
@@ -37,4 +55,13 @@ section#top {
 .subtitle {
     font-weight: 400;
     color: rgba(255,255,255,.5);
+}
+
+.sectiontitle {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,.5);
+}
+
+#introcontent {
+    padding-left: 4vw;
 }
