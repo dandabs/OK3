@@ -53,7 +53,7 @@ section {
 
     background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/1650.jpg");
     filter: grayscale(100%);
-    opacity: 0.6;
+    opacity: 0.3;
     background-repeat: no-repeat;
     background-size:contain;
 
@@ -80,7 +80,7 @@ section {
 #graphyimg2 {
 
     filter: grayscale(100%);
-    opacity: 0.3;
+    opacity: 0.4;
     width: 70%;
     margin-top: 5%;
 
@@ -89,7 +89,7 @@ section {
 .vertical {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) !important;
 }
 
 .title {
