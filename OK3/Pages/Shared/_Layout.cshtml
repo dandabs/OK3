@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Maven+Pro:wght@400;600&family=Nerko+One&display=swap" rel="stylesheet">  
     <script src="https://cdn.jsdelivr.net/gh/adactio/FitText.js@master/fittext.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -64,6 +66,10 @@
 
     <link rel="stylesheet" href="~/css/custom.css" />
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     @RenderSection("Scripts", required: false)
 </body>

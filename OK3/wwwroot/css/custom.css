@@ -21,8 +21,8 @@ section#top {
     z-index: -1;
 }
 
-section#intro {
-    height: 100vh;
+section {
+    min-height: 100vh;
 }
 
 .row {
@@ -36,6 +36,53 @@ section#intro {
     opacity: 0.3;
     background-repeat: no-repeat;
     background-size:contain;
+
+}
+
+#languagesimg {
+
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/3293.jpg");
+    filter: grayscale(100%);
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
+#graphyimg {
+
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/1650.jpg");
+    filter: grayscale(100%);
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
+#introimg2 {
+
+    filter: grayscale(100%);
+    opacity: 0.3;
+    width: 70%;
+    margin-top: 5%;
+
+}
+
+#languagesimg2 {
+
+    filter: grayscale(100%);
+    opacity: 0.3;
+    width: 70%;
+    margin-top: 5%;
+
+}
+
+#graphyimg2 {
+
+    filter: grayscale(100%);
+    opacity: 0.3;
+    width: 70%;
+    margin-top: 5%;
 
 }
 
@@ -64,4 +111,20 @@ section#intro {
 
 #introcontent {
     padding-left: 4vw;
+}
+
+#languagescontent {
+    padding-right: 4vw;
+}
+
+#graphycontent {
+    padding-left: 4vw;
+}
+
+.sectioncontent {
+    color: rgb(192, 192, 192);
+}
+
+.row {
+    padding-bottom: 10%;
 }
