@@ -9,15 +9,14 @@ body {
 }
 
 .navbar {
-    background: none !important;
     text-transform: uppercase;
     font-weight: 600;
+    
+    background: linear-gradient(to top, rgba(10,10,10,0), rgba(10,10,10, 1));
   }
 
 section#top {
     height: calc(100vh);
-    position: relative;
-    top: -72px;
     z-index: -1;
 }
 
@@ -52,6 +51,36 @@ section {
 #graphyimg {
 
     background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/1650.jpg");
+    filter: grayscale(100%);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
+#cclogo {
+
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/cloudcraft.jpg");
+    filter: grayscale(100%);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
+#hclogo {
+
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/hclogo5.jpg");
+    filter: grayscale(100%);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
+#mklogo {
+
+    background-image: url("/img/mklogo.jpg");
     filter: grayscale(100%);
     opacity: 0.3;
     background-repeat: no-repeat;
@@ -119,6 +148,18 @@ section {
 
 #graphycontent {
     padding-left: 4vw;
+}
+
+#cccontent {
+    padding-right: 4vw;
+}
+
+#hccontent {
+    padding-left: 4vw;
+}
+
+#mkcontent {
+    padding-right: 4vw;
 }
 
 .sectioncontent {
