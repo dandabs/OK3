@@ -85,6 +85,16 @@ section#top {
 
 }
 
+#vslogo {
+
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/vedemo.jpg");
+    filter: grayscale(100%);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
 #videoimg {
 
     background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/roisin.jpg");
@@ -118,6 +128,16 @@ section#top {
 #mklogo {
 
     background-image: url("/img/mklogo.jpg");
+    filter: grayscale(100%);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+
+#cslogo {
+
+    background-image: url("/img/csrp.jpg");
     filter: grayscale(100%);
     opacity: 0.3;
     background-repeat: no-repeat;
@@ -205,6 +225,14 @@ section#top {
 }
 
 #mkcontent {
+    padding-right: 4vw;
+}
+
+#vscontent {
+    padding-left: 4vw;
+}
+
+#cscontent {
     padding-right: 4vw;
 }
 
