@@ -27,5 +27,7 @@ $(document).ready(_ => {
         $('#sub').text(Math.abs(age_dt.getUTCFullYear() - 1970) + " year old developer and aspiring polygot; obsessed with Nordic countries.");
 
         window.fitText( document.getElementById("title"), 2 );
+        window.fitText( document.getElementById("pf"), 2 );
+        window.fitText( document.getElementById("tm"), 2 );
 
 });

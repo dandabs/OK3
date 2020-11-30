@@ -24,6 +24,17 @@ section#top {
     height: 100%;
 }
 
+@media (max-width:768px) {
+
+
+    #introimg2, #languagesimg2, #graphyimg2 {
+
+        width: 100% !important;
+
+    }
+
+ }
+
 #introimg {
 
     background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/2198.jpg");
