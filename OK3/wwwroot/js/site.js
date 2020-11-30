@@ -29,5 +29,6 @@ $(document).ready(_ => {
         window.fitText( document.getElementById("title"), 2 );
         window.fitText( document.getElementById("pf"), 2 );
         window.fitText( document.getElementById("tm"), 2 );
+        window.fitText( document.getElementById("smed"), 2 );
 
 });
