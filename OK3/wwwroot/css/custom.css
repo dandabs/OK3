@@ -259,3 +259,14 @@ section#top {
     opacity: 0.3;
     object-fit: cover;
 }
+
+.modal.fade .modal-dialog { /*override bootstrap modal slide-in from top*/
+    -webkit-transform: translate(0, -25%) !important;
+    -ms-transform: translate(0, -25%) !important;
+    transform: translate(0, -25%) !important;
+    -webkit-transition: -webkit-transform 0.3s ease-out !important;
+    -moz-transition: -moz-transform 0.3s ease-out !important;
+    -o-transition: -o-transform 0.3s ease-out !important;
+    transition: transform 0.3s ease-out !important;
+  }
+  
