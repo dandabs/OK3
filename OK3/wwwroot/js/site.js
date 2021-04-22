@@ -32,3 +32,12 @@ $(document).ready(_ => {
         window.fitText( document.getElementById("smed"), 2 );
 
 });
+
+$(document).ready(function() {
+  $(".convert-emoji").each(function() {
+      var original = $(this).html();
+      // use .shortnameToImage if only converting shortnames (for slightly better performance)
+      var converted = joypixels.toImage(original);
+      $(this).html(converted);
+  });
+});
