@@ -21,6 +21,11 @@ section#top {
     z-index: -1;
 }
 
+img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
 .row {
     height: 100%;
 }
