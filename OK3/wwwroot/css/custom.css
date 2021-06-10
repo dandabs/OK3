@@ -43,7 +43,7 @@ img {
 
 #introimg {
 
-    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/2198.jpg");
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/IMG_4112.jpg");
     filter: grayscale(100%);
     opacity: 0.3;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@ img {
 
 #graphyimg {
 
-    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/1650.jpg");
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/IMG_4303.jpg");
     filter: grayscale(100%);
     opacity: 0.3;
     background-repeat: no-repeat;
