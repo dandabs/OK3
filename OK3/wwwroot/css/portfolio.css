@@ -40,6 +40,7 @@ a.item {
     margin-bottom: 5px;
 
     display: block;
+    cursor: pointer;
 }
 
 a.item.active {
@@ -56,6 +57,7 @@ a.stitle {
     margin-bottom: 10px;
 
     display: block;
+    cursor: pointer;
 }
 
 div#content {
@@ -73,6 +75,7 @@ div#content {
     border-radius: 10px;
     position: relative;
     filter: grayscale(100%);
+    cursor: pointer;
 }
 
 .entrytext {
@@ -118,8 +121,29 @@ div#content {
 
 img {
     width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) !important;
 }
 
 .modal-dialog {
     max-width: 70vw !important;
+}
+
+span {
+    margin-right: 5px;
+    /*font-family: 'Maven Pro', 'sans-serif';
+    color: rgb(192, 192, 192);*/
+    font-family: 'Maven Pro', 'sans-serif';
+    color: rgb(192, 192, 192);
+}
+
+.pfentry:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-opacity: 1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
