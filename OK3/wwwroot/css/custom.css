@@ -20,7 +20,7 @@ body {
     font-weight: 600;
     
     background: linear-gradient(to top, rgba(10,10,10,0), rgba(10,10,10, 1));
-  }
+}
 
 section#top {
     height: calc(100vh);
@@ -49,7 +49,7 @@ img {
 
 #introimg {
 
-    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/IMG_4112.JPG");
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/49f83e39-32e5-47f4-ae64-152a40c4e36e.JPG");
     filter: grayscale(100%);
     opacity: 0.3;
     background-repeat: no-repeat;
@@ -374,7 +374,7 @@ section#portfoliobutton {
     filter: grayscale(100%);
 
     height: 30vh;
-    width: 110vw;
+    width: 100vw;
     left: 0;
 
 }
