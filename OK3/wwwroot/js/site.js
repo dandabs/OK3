@@ -14,7 +14,8 @@ var typed = new Typed('#navbartitle', {
         'ArticPolarBear1',
         'kindakool',
         'Wee Chilly',
-        'dandabsMC'
+        'dandabsMC',
+        'dandobs',
     ],
     loop: true,
     backSpeed: 40,
