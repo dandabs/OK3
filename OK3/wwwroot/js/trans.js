@@ -295,17 +295,44 @@ var dict = {
     }
   };
 
-var trn = new EOTranslator(dict, "en");
+var trn = new EOTranslator(dict, "fi");
 
+document.getElementById("btnFI").classList.add('nav-selected');
 trn.translateDOM();
 
 function doTrn(lang) {
+
+    document.getElementById("btnEN").classList.remove('nav-selected');
+    document.getElementById("btnFI").classList.remove('nav-selected');
+    document.getElementById("btnNO").classList.remove('nav-selected');
+
+    if (lang == "en") document.getElementById("btnEN").classList.add('nav-selected');
+    if (lang == "fi") document.getElementById("btnFI").classList.add('nav-selected');
+    if (lang == "no") document.getElementById("btnNO").classList.add('nav-selected');
+
     trn.language = lang;
     trn.translateDOM();
+
     $(".convert-emoji").each(function() {
         var original = $(this).html();
         // use .shortnameToImage if only converting shortnames (for slightly better performance)
         var converted = joypixels.toImage(original);
         $(this).html(converted);
     });
+    
 }
+
+$(function () {
+    fetch('https://api.ipregistry.co/?key=fu6vkxc3n0ivo4xu')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (payload) {
+        if (payload.location.country.code == "AX") doTrn("no");
+        if (payload.location.country.code == "SE") doTrn("no");
+        if (payload.location.country.code == "NO") doTrn("no");
+        if (payload.location.country.code == "DK") doTrn("no");
+        if (payload.location.country.code == "US") doTrn("en");
+        if (payload.location.country.code == "CA") doTrn("en");
+    });
+});
