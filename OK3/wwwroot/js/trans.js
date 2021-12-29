@@ -104,8 +104,8 @@ var dict = {
         name: "OTTO KOSKINEN",
 
         introTitle: 'JOHDANTO',
-        introDesc: 'Moi, olen Dan.',
-        introBody1: 'Olen 16-vuotias poika Ballymenasta, Pohjois-Irlannista 🇬🇧 🇮🇪.',
+        introDesc: 'Moi, olen Otto (tai Dan).',
+        introBody1: 'Olen 16-vuotias poika Ballymenasta, Pohjois-Irlannista 🇬🇧 🇮🇪.<br>Otto Koskinen on salanimi jota käytän verkossa, jos mietit kuka hän on.',
         introBody2: 'Olen tällä hetkellä brittiläisen toisen asteen koulutuksen GCSE-vaiheessa, jossa suoritan koekursseja liiketalouden ja viestinnän opinnoista, digitaalitekniikasta, kemiasta, biologiasta, fysiikasta, englanninkielisestä kirjallisuudesta, edistyneestä matematiikasta ja maantiedosta, ja matematiikan, englanti ja uskonnolliset opinnot.',
         introBody3: 'Jatkossa toivon voivani jatkaa opiskelumatkaani Taso 3 Extended Diploma -ohjelmistotekniikan (tai A-tasojen) kautta ja opiskelemalla yliopistossa Suomessa - minne aion muuttaa aikuisena.(mahdollisimman pian). Olen kiinnostunut sekä ohjelmistokehityksestä että kyberturvallisuudesta ja harkitsen työtä jommallakummalla näistä aloista.',
         introBody4: 'Siitä lähtien, kun loin ensimmäisen HTML-perussivustoni 7-vuotiaana, olen omistautunut kehittämään taitojani kehittämällä verkkosivustoja, sovelluksia, API:ita ja melkein kaikkea, mikä minua kiinnostaa – mikään ei ole liian suuri haaste edes yrittää!',
@@ -202,8 +202,8 @@ var dict = {
         name: "OTTO KOSKINEN",
 
         introTitle: 'INTRODUKSJON',
-        introDesc: 'Hei, jeg er Dan.',
-        introBody1: 'Jeg er en 16 år gammel fra Ballymena, i Nord-Irland 🇬🇧 🇮🇪.',
+        introDesc: 'Hei, jeg er Otto (eller Dan).',
+        introBody1: 'Jeg er en 16 år gammel fra Ballymena, i Nord-Irland 🇬🇧 🇮🇪.<br>Otto Koskinen er den pseudonym jeg bruker på nettet, hvis du lurer på hvem han er.',
         introBody2: 'Jeg er for tiden i GCSE-fasen av britisk videregående opplæring, og tar eksamenskurs i forretnings- og kommunikasjonsstudier, digital ingeniørvitenskap, kjemi, biologi, fysikk, engelsk litteratur, avansert matematikk og geografi, og matematikk, engelsk og religionsvitenskap.',
         introBody3: 'I nær fremtid håper jeg å fortsette utdanningsreisen min gjennom et utvidet diplom på nivå 3 i databehandling/programvareteknikk (eller A-nivåer), og studere ved  et universitete i Finland - hvor jeg planlegger å immigrere til (så snart som mulig) når jeg blir voksen. Jeg er interessert i både programvareutvikling og cybersikkerhet, og jeg vurderer en jobb i ett av disse feltene.',
         introBody4: 'Siden jeg opprettet mitt første grunnleggende HTML-nettsted i en alder av 7, har jeg vært dedikert til å forbedre ferdighetene mine med å utvikle nettsteder, apper, APIer og stort sett alt som interesserer meg - ingenting er for stor utfordring til å prøve!',
@@ -297,15 +297,6 @@ var dict = {
 
 var trn = new EOTranslator(dict, "fi");
 
-document.getElementById("btnFI").classList.add('nav-selected');
-trn.translateDOM();
-
-var diff_ms = Date.now() - new Date(2005, 7, 5).getTime();
-var age_dt = new Date(diff_ms); 
-$('#sub').text(Math.abs(age_dt.getUTCFullYear() - 1970) + trn.translate("subtitle"));
-
-var gLang = "fi";
-
 function doTrn(lang) {
 
     document.getElementById("btnEN").classList.remove('nav-selected');
@@ -329,10 +320,21 @@ function doTrn(lang) {
         var converted = joypixels.toImage(original);
         $(this).html(converted);
     });
+
+    window.fitText( document.getElementById("title"), 2 );
+    window.fitText( document.getElementById("tm"), 2 );
+    window.fitText( document.getElementById("tm2"), 2 );
+    window.fitText( document.getElementById("tm3"), 2 );
+    window.fitText( document.getElementById("tm4"), 2 );
+    window.fitText( document.getElementById("smed"), 2 );
+    
     
 }
 
 $(function () {
+
+doTrn("fi");
+
     fetch('https://api.ipregistry.co/?key=fu6vkxc3n0ivo4xu')
     .then(function (response) {
         return response.json();
@@ -344,5 +346,8 @@ $(function () {
         if (payload.location.country.code == "DK") doTrn("no");
         if (payload.location.country.code == "US") doTrn("en");
         if (payload.location.country.code == "CA") doTrn("en");
+
+        if (location.hostname == "danielonline.net") doTrn("en");
     });
+
 });

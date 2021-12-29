@@ -26,6 +26,9 @@ var typed = new Typed('#navbartitle', {
     window.fitText( document.getElementById("title"), 2 );
     window.fitText( document.getElementById("pf"), 2 );
     window.fitText( document.getElementById("tm"), 2 );
+    window.fitText( document.getElementById("tm2"), 2 );
+    window.fitText( document.getElementById("tm3"), 2 );
+    window.fitText( document.getElementById("tm4"), 2 );
     window.fitText( document.getElementById("smed"), 2 );
 
 });
