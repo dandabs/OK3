@@ -21,16 +21,12 @@ var typed = new Typed('#navbartitle', {
     backSpeed: 40,
   });
 
-$(document).ready(_ => {
-        var diff_ms = Date.now() - new Date(2005, 7, 5).getTime();
-        var age_dt = new Date(diff_ms); 
+  $(document).ready(_ => {
 
-        $('#sub').text(Math.abs(age_dt.getUTCFullYear() - 1970) + " year old developer and aspiring polyglot; tuleva suomalainen.");
-
-        window.fitText( document.getElementById("title"), 2 );
-        window.fitText( document.getElementById("pf"), 2 );
-        window.fitText( document.getElementById("tm"), 2 );
-        window.fitText( document.getElementById("smed"), 2 );
+    window.fitText( document.getElementById("title"), 2 );
+    window.fitText( document.getElementById("pf"), 2 );
+    window.fitText( document.getElementById("tm"), 2 );
+    window.fitText( document.getElementById("smed"), 2 );
 
 });
 

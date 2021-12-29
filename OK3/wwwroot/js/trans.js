@@ -183,7 +183,7 @@ var dict = {
         groupTitle3: 'Ballymena Amateur Swimming Club.',
         groupDesc3_1: 'Noin 3. luokalta 9. luokkaan olin osa BASC:tä – uin sekä Aquasprint- että PTL-joukkueen gaalassa.',
         groupDesc3_2: 'Ryhmään kuuluminen oli hieno kokemus, joka opetti paljon arvokkaita opetuksia ja jätti paljon muistoja – tukemalla muuta joukkuetta, ei vain pisteiden tai PB:t keräämisessä, vaan myös kannustamalla muita uimarit alkuerissään; Jokaisen gaalan alussa kuultujen laulujen ohella vallitsi suuri yhteisöllinen henki.',
-        groupDesc3_3: 'Kilpailin myös koulugaalaissa uimassa sekä ala- että lukiossani.',
+        groupDesc3_3: 'Kilpailin myös koulun uimakisoissa sekä peruskoulussa, että lukiossa.',
 
         contTitle: 'OTA YHTEYTTÄ',
         contDesc: 'Nähdään pian :)',
@@ -300,18 +300,28 @@ var trn = new EOTranslator(dict, "fi");
 document.getElementById("btnFI").classList.add('nav-selected');
 trn.translateDOM();
 
+var diff_ms = Date.now() - new Date(2005, 7, 5).getTime();
+var age_dt = new Date(diff_ms); 
+$('#sub').text(Math.abs(age_dt.getUTCFullYear() - 1970) + trn.translate("subtitle"));
+
+var gLang = "fi";
+
 function doTrn(lang) {
 
     document.getElementById("btnEN").classList.remove('nav-selected');
     document.getElementById("btnFI").classList.remove('nav-selected');
     document.getElementById("btnNO").classList.remove('nav-selected');
 
-    if (lang == "en") document.getElementById("btnEN").classList.add('nav-selected');
-    if (lang == "fi") document.getElementById("btnFI").classList.add('nav-selected');
-    if (lang == "no") document.getElementById("btnNO").classList.add('nav-selected');
+    if (lang == "en") { document.getElementById("btnEN").classList.add('nav-selected'); gLang = "en"; }
+    if (lang == "fi") { document.getElementById("btnFI").classList.add('nav-selected'); gLang = "fi"; }
+    if (lang == "no") { document.getElementById("btnNO").classList.add('nav-selected'); gLang = "no"; }
 
     trn.language = lang;
     trn.translateDOM();
+
+    var diff_ms = Date.now() - new Date(2005, 7, 5).getTime();
+    var age_dt = new Date(diff_ms); 
+    $('#sub').text(Math.abs(age_dt.getUTCFullYear() - 1970) + trn.translate("subtitle"));
 
     $(".convert-emoji").each(function() {
         var original = $(this).html();

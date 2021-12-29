@@ -62,7 +62,7 @@ img {
 
 #languagesimg {
 
-    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/3293.jpg");
+    background-image: radial-gradient(transparent 50%, rgba(10,10,10)), url("/img/IMG_2506.jpg");
     filter: grayscale(100%);
     opacity: 0.6;
     background-repeat: no-repeat;
@@ -108,6 +108,7 @@ img {
     background-size:contain;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    background-position: center;
 
 }
 
@@ -120,6 +121,7 @@ img {
     background-size:contain;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    background-position: center;
 
 }
 
@@ -132,6 +134,7 @@ img {
     background-size:contain;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    background-position: center;
 
 }
 
@@ -144,6 +147,7 @@ img {
     background-size:contain;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    background-position: center;
 
 }
 
@@ -156,6 +160,7 @@ img {
     background-size:contain;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    background-position: center;
 
 }
 
@@ -168,6 +173,7 @@ img {
     background-size:contain;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    background-position: center;
 
 }
 
@@ -468,7 +474,7 @@ section#qualifbutton {
 
 .arrow {
     text-align: center;
-    margin: 8% 0;
+    margin: 4% 0;
   }
   .bounce {
     -moz-animation: bounce 2s infinite;
@@ -492,7 +498,22 @@ section#qualifbutton {
     color: white; text-decoration: none;
   }
 
+  .white {
+    color: white; text-decoration: none;
+  }
+
   .float-btm {
     flex-direction: column;
     align-self: flex-end;
+    top: 60%;
+    position: relative;
   }
+
+#socialintrobox {
+    flex-direction: row;
+}
+
+.si {
+    padding-left: 10px;
+    padding-right: 10px;
+}
