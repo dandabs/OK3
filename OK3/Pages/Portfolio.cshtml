@@ -22,10 +22,10 @@
 
 </section>
 
-<section id="main">
+<section id="main" runat="server">
 
-  <div class="container">
-    <div class="row">
+  <div class="container" runat="server">
+    <div class="row" runat="server">
 
     <div class="col-2" id="sidebar">
 
@@ -55,11 +55,11 @@
       <a class="item" data-filter="books">Books</a>
     </div>
 
-    <div class="col-10" id="content">
+    <div class="col-10" id="content" runat="server">
 
       <div class="col-lg-4 col-md-6 col-sm-12 e filter all programming discordbots webapplications" onclick="$('#sedöModal').modal('toggle')">
         <div class="pfentry" style="background: rgba(40,40,40,0.9) url('../img/hcbot.jpg');">
-          <div class="entrytext">
+          <div class="entrytext" id="test" runat="server">
             <p class="entrytitle">Sedö</p>
             <p class="entrydesc">Nodejs Discord-Roblox verification bot with web interface and Firebase integration</p>
           </div>
